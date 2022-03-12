@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/base/src/main/res/layout/activity_base.xml" value="0.16" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/login/src/main/res/layout/activity_create_account_fragment.xml" value="0.37182971014492755" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/login/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/login/src/main/res/layout/activity_splash.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/login/src/main/res/layout/fragment_esqueci.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/login/src/main/res/layout/fragment_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/bolavermelha.xml" value="0.37777777777777777" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/editbackground.xml" value="0.37777777777777777" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/editbackgroundfocus.xml" value="0.37777777777777777" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedbackgroundfocus.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedelement.xml" value="0.37222222222222223" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedelementred.xml" value="0.37222222222222223" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedspecial.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/base/src/main/res/layout/activity_base.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/login/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/login/src/main/res/layout/activity_splash.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/backgroundlogin.xml" value="0.3888888888888889" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/bolabranca.xml" value="0.3888888888888889" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/bolavermelha.xml" value="0.3888888888888889" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3830769230769231" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

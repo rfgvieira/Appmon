@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/transparent"
+   >
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="@dimen/imgbig"
+        android:layout_height="@dimen/imgmed"
+        android:src="@drawable/pokemon_logo"
+        android:layout_marginHorizontal="@dimen/marginnormal"/>
+
+    <ImageView
+        android:id="@+id/imv_pokeball"
+        android:layout_width="@dimen/imgmed"
+        android:layout_height="@dimen/imgmed"
+        android:src="@drawable/pokeball"
+        android:layout_marginHorizontal="@dimen/marginnormal" />
+</androidx.appcompat.widget.LinearLayoutCompat>

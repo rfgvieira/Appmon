@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/xnormal"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_descesqueci"
+        android:layout_width="@dimen/imgbig"
+        android:layout_height="wrap_content"
+        android:text="@string/esqsenhadesc"
+        android:textSize="@dimen/txt_xnormal"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_emailesqueci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:layout_marginTop="@dimen/normal"
+        android:background="@drawable/roundedelement"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:padding="@dimen/xnormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_descesqueci" />
+
+    <Button
+        android:id="@+id/btn_enviaresqueci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        android:padding="@dimen/xnormal"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:layout_marginBottom="@dimen/marginnormal"
+        android:background="@drawable/roundedelementred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_emailesqueci"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

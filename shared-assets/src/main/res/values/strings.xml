@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Appmon</string>
+    <string name="bemvindo">Seja <b>Bem-vindo (a)!  </b></string>
+    <string name="powered"><b>Powered by: Rodrigo</b></string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="entrar">Entrar</string>
+    <string name="enviar">Enviar</string>
+    <string name="criar">Criar uma conta</string>
+    <string name="nome">Nome Completo</string>
+    <string name="datanasc">Data de Nascimento</string>
+    <string name="informacoes">Preencha todas as informações:</string>
+    <string name="esqsenha"><b>Esqueci Minha Senha</b></string>
+    <string name="esqsenhadesc">Digite seu e-mail para enviarmos \n um link de recuperação de senha</string>
+</resources>

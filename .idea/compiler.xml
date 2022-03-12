@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="Appmon.app" target="11" />
+      <module name="Appmon.base" target="11" />
+      <module name="Appmon.habilidades" target="11" />
+      <module name="Appmon.login" target="11" />
+      <module name="Appmon.pokemon" target="11" />
+      <module name="Appmon.shared-assets" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

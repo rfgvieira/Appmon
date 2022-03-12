@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CreateAccountFragment">
+
+    <EditText
+        android:id="@+id/edt_nomecriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:hint="@string/nome"
+        android:background="@drawable/roundedelement"
+        android:padding="@dimen/xnormal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_usuariocriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:hint="@string/usuario"
+        android:background="@drawable/roundedelement"
+        android:padding="@dimen/xnormal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small"
+        app:layout_constraintTop_toBottomOf="@id/edt_nomecriar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_datanasccriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:hint="@string/datanasc"
+        android:background="@drawable/roundedelement"
+        android:padding="@dimen/xnormal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small"
+        app:layout_constraintTop_toBottomOf="@id/edt_usuariocriar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_emailcriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:hint="@string/email"
+        android:background="@drawable/roundedelement"
+        android:padding="@dimen/xnormal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small"
+        app:layout_constraintTop_toBottomOf="@id/edt_datanasccriar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_senhacriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:hint="@string/senha"
+        android:background="@drawable/roundedelement"
+        android:padding="@dimen/xnormal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small"
+        app:layout_constraintTop_toBottomOf="@id/edt_emailcriar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_entrarcriar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        android:padding="@dimen/xnormal"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:layout_marginBottom="@dimen/marginnormal"
+        android:background="@drawable/roundedelementred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

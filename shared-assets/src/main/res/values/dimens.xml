@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xxsmall">2dp</dimen>
+    <dimen name="xsmall">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="xnormal">16dp</dimen>
+    <dimen name="normal">24dp</dimen>
+    <dimen name="xlarge">32dp</dimen>
+    <dimen name="large">64dp</dimen>
+
+
+    <dimen name="txt_small">12sp</dimen>
+    <dimen name="txt_xnormal">16sp</dimen>
+    <dimen name="txt_normal">18sp</dimen>
+
+
+
+    <dimen name="bolah">160dp</dimen>
+    <dimen name="bolaw">10dp</dimen>
+    <dimen name="bolarad">320dp</dimen>
+
+    <dimen name="imgsmall">50dp</dimen>
+    <dimen name="imgxmed">75dp</dimen>
+    <dimen name="imgmed">100dp</dimen>
+    <dimen name="imgxbig">200dp</dimen>
+    <dimen name="imgbig">300dp</dimen>
+
+    <dimen name="marginnormal">50dp</dimen>
+    <dimen name="marginxlarge">75dp</dimen>
+    <dimen name="marginlarge">100dp</dimen>
+</resources>
