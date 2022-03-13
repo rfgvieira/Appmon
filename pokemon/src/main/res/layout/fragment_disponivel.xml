@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DisponivelFragment">
+
+
+    <ImageView
+        android:id="@+id/imv_ashdisp"
+        android:layout_width="@dimen/imgxmed"
+        android:layout_height="@dimen/imgmed"
+        android:src="@drawable/ash"
+        android:layout_marginTop="@dimen/marginxnormal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TextView
+        android:id="@+id/tv_escolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_normal"
+        android:text="@string/escolha"
+        android:layout_marginTop="@dimen/margintiny"
+        app:layout_constraintTop_toTopOf="@id/imv_ashdisp"
+        app:layout_constraintStart_toEndOf="@id/imv_ashdisp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_clique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_xnormal"
+        android:text="@string/cliquepokemon"
+        android:layout_marginTop="@dimen/margintiny"
+        app:layout_constraintTop_toBottomOf="@id/tv_escolha"
+        app:layout_constraintStart_toEndOf="@id/imv_ashdisp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

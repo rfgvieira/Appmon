@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Appmon</string>
+
+    <!--Login-->
     <string name="bemvindo">Seja <b>Bem-vindo (a)!  </b></string>
     <string name="powered"><b>Powered by: Rodrigo</b></string>
     <string name="usuario">Usuário</string>
@@ -13,4 +15,17 @@
     <string name="informacoes">Preencha todas as informações:</string>
     <string name="esqsenha"><b>Esqueci Minha Senha</b></string>
     <string name="esqsenhadesc">Digite seu e-mail para enviarmos \n um link de recuperação de senha</string>
+
+    <!--Pokemon-->
+    <string name="indisponivel">Pokemóns Indisponíveis</string>
+    <string name="naoencontra">Não encontramos nada\nno momento. Volte depois.</string>
+    <string name="disponivel">E-margintiny</string>
+    <string name="escolha"><b>ESCOLHA SEU POKEMÓN</b></string>
+    <string name="cliquepokemon">Clique em um dos pokemóns\nDa lista abaixo para ver\nos detalhes de cada um.</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="qtd">Qtd.</string>
+    <string name="item">Item</string>
+    <string name="go">Go</string>
+    <string name="detalhepoke">Detalhes do Pokémon</string>
+
 </resources>

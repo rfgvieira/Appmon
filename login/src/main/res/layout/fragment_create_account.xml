@@ -85,6 +85,7 @@
         android:textColor="@color/white"
         android:layout_marginHorizontal="@dimen/normal"
         android:layout_marginBottom="@dimen/marginnormal"
+        android:elevation="10dp"
         android:background="@drawable/roundedelementred"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

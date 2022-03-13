@@ -4,36 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/transparent"
-    tools:context=".activity.LoginActivity">
+    tools:context=".activity.PokemonActivity">
+
     <ImageView
-        android:id="@+id/imv_logo"
-        android:layout_width="@dimen/imgxbig"
+        android:id="@+id/imv_pokeballpoke"
+        android:layout_width="@dimen/imgxmed"
         android:layout_height="@dimen/imgxmed"
-        android:src="@drawable/pokemon_logo"
-        android:layout_margin="@dimen/marginnormal"
+        android:src="@drawable/pokeball"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_titlelogin"
+        android:id="@+id/tv_titlepokemon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/bemvindo"
+        android:textColor="@color/white"
         android:textSize="@dimen/txt_normal"
-        android:layout_marginTop="@dimen/marginnormal"
-        app:layout_constraintTop_toBottomOf="@id/imv_logo"
+        android:layout_marginTop="@dimen/marginsmall"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_pokeballpoke"/>
+
     <FrameLayout
-        android:id="@+id/fl_login"
+        android:id="@+id/fl_pokemon"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginVertical="@dimen/normal"
-        android:elevation="10dp"
+        android:paddingHorizontal="@dimen/marginxnormal"
+        android:elevation="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_titlelogin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titlepokemon"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

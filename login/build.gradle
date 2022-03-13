@@ -53,4 +53,5 @@ dependencies {
     implementation project(':shared-assets')
     implementation project(':service')
     implementation project(':models')
+    implementation project(':pokemon')
 }

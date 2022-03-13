@@ -25,4 +25,5 @@ abstract class BaseActivity : AppCompatActivity() {
         binding.imvBolabranca.visibility = View.GONE
     }
 
+
 }
