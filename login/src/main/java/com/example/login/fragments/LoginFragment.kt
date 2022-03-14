@@ -6,13 +6,18 @@ import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import com.example.login.R
 import com.example.login.activity.LoginActivity
 import com.example.login.databinding.FragmentLoginBinding
+import com.example.login.viewmodel.LoginViewModel
 import com.example.pokemon.activity.PokemonActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment() {
     private lateinit var binding : FragmentLoginBinding
+    private val viewmodel : LoginViewModel by viewModel()
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentLoginBinding.inflate(inflater,container,false)
 
@@ -25,14 +30,23 @@ class LoginFragment : Fragment() {
         }
 
         binding.btnEntrarlogin.setOnClickListener {
-            val intent = Intent(activity, PokemonActivity :: class.java)
-            startActivity(intent)
+            checkLogin()
         }
 
         return binding.root
     }
 
+    private fun checkLogin() {
+        with(binding){
+            if(viewmodel.getAccount(edtUserlogin.text.toString(), edtSenhalogin.text.toString())){
+                val intent = Intent(activity, PokemonActivity :: class.java)
+                startActivity(intent)
+            } else{
+                binding.tvErrologin.visibility = View.VISIBLE
+                binding.edtUserlogin.background =
+                    activity?.let { AppCompatResources.getDrawable(it,R.drawable.roundedbackgrounderror) }
+            }
 
-
-
+        }
+    }
 }

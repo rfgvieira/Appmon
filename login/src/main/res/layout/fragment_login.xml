@@ -41,6 +41,19 @@
         app:layout_constraintTop_toBottomOf="@id/edt_senhalogin"
         app:layout_constraintEnd_toEndOf="@id/edt_senhalogin"/>
 
+    <TextView
+        android:id="@+id/tv_errologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/errologin"
+        android:textSize="@dimen/txt_xnormal"
+        android:textColor="@color/red"
+        android:layout_marginTop="@dimen/margintiny"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_esqueci"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <Button
         android:id="@+id/btn_entrarlogin"
         android:layout_width="match_parent"

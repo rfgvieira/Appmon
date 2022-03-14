@@ -14,6 +14,7 @@
     <string name="datanasc">Data de Nascimento</string>
     <string name="informacoes">Preencha todas as informações:</string>
     <string name="esqsenha"><b>Esqueci Minha Senha</b></string>
+    <string name="errologin"><b>Usuário ou/e senha incorreto(s)</b></string>
     <string name="esqsenhadesc">Digite seu e-mail para enviarmos \n um link de recuperação de senha</string>
 
     <!--Pokemon-->

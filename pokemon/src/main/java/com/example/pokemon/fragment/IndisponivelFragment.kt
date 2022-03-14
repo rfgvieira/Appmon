@@ -1,12 +1,10 @@
 package com.example.pokemon.fragment
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.pokemon.R
 import com.example.pokemon.databinding.FragmentIndisponivelBinding
 
 class IndisponivelFragment : Fragment() {

@@ -17,32 +17,33 @@ class LoginActivity : BaseActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         setUpLoginFragment()
-
     }
 
      fun setUpLoginFragment() {
-         binding.tvTitlelogin.text = getString(R.string.bemvindo)
          val loginFragment = LoginFragment()
          supportFragmentManager.beginTransaction()
             .replace(R.id.fl_login,loginFragment,"Login")
-            .commit()
+             .addToBackStack(null)
+             .commit()
+         binding.tvTitlelogin.text = getString(R.string.bemvindo)
     }
 
      fun setUpCreateFragment() {
-         binding.tvTitlelogin.text = getString(R.string.informacoes)
         val createFragment = CreateAccountFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_login,createFragment,"Create")
+            .addToBackStack(null)
             .commit()
+         binding.tvTitlelogin.text = getString(R.string.informacoes)
     }
 
     fun setUpEsqueciFragment(){
-        binding.tvTitlelogin.text = getString(R.string.esqsenha)
         val esqueciFragment = EsqueciFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_login,esqueciFragment,"Esqueci")
+            .addToBackStack(null)
             .commit()
+        binding.tvTitlelogin.text = getString(R.string.esqsenha)
     }
 }

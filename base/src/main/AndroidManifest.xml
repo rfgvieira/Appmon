@@ -3,9 +3,7 @@
     package="com.example.base">
 
     <application>
-        <activity
-            android:name=".BaseActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>

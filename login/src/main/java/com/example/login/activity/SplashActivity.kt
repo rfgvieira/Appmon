@@ -21,6 +21,7 @@ class SplashActivity : BaseActivity() {
             override fun onFinish() {
                 val intent = Intent(cont ,LoginActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
         timer.start()

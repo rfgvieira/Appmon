@@ -1,6 +1,5 @@
 package com.example.pokemon.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.base.BaseActivity
 import com.example.pokemon.R
