@@ -2,6 +2,7 @@ package com.example.appmon
 
 import android.app.Application
 import com.example.login.module.LoginModuleDI
+import com.example.pokemon.module.PokemonModuleDI
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -10,7 +11,8 @@ class App : Application() {
         super.onCreate()
 
         val listModules = listOf(
-            LoginModuleDI().getModules()
+            LoginModuleDI().getModules(),
+            PokemonModuleDI().getModules()
         )
 
         startKoin {

@@ -20,10 +20,10 @@
     <!--Pokemon-->
     <string name="indisponivel">Pokemóns Indisponíveis</string>
     <string name="naoencontra">Não encontramos nada\nno momento. Volte depois.</string>
-    <string name="disponivel">E-margintiny</string>
+    <string name="disponivel">Pokemóns Disponíveis</string>
     <string name="escolha"><b>ESCOLHA SEU POKEMÓN</b></string>
     <string name="cliquepokemon">Clique em um dos pokemóns\nDa lista abaixo para ver\nos detalhes de cada um.</string>
-    <string name="quantidade">Quantidade</string>
+    <string name="quantidade">Quantidade: </string>
     <string name="qtd">Qtd.</string>
     <string name="item">Item</string>
     <string name="go">Go</string>

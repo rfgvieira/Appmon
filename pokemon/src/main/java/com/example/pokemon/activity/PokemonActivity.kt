@@ -1,6 +1,7 @@
 package com.example.pokemon.activity
 
 import android.os.Bundle
+import android.view.View
 import com.example.base.BaseActivity
 import com.example.pokemon.R
 import com.example.pokemon.databinding.ActivityPokemonBinding
@@ -15,7 +16,7 @@ class PokemonActivity : BaseActivity() {
         hideWhiteBall()
         setContentView(binding.root)
 
-        setUpIndisponivelFragment()
+        setUpDisponivelFragment()
     }
 
     fun setUpDisponivelFragment(){
@@ -32,5 +33,13 @@ class PokemonActivity : BaseActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_pokemon,indispFragment,"Indisponivel")
             .commit()
+    }
+
+    fun removePokeball(){
+        binding.imvPokeballpoke.visibility = View.GONE
+    }
+
+    fun removeText(){
+        binding.tvTitlepokemon.visibility = View.GONE
     }
 }

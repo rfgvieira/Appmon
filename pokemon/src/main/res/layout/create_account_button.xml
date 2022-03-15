@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/imgsmall"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="@dimen/imgsmall"
+        android:layout_height="@dimen/imgsmall"
+        android:translationZ="500dp"
+        android:src="@drawable/pokeball"
+        android:layout_alignStart="@id/cl_mainbutton"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_mainbutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundedelement"
+        android:translationZ="200dp"
+        android:padding="@dimen/small">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal"
+            android:text="@string/criar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="@dimen/imgsmall"
+        android:layout_height="@dimen/imgsmall"
+        android:layout_alignEnd="@id/cl_mainbutton"
+        android:src="@drawable/pokeball"
+        android:translationZ="500dp" />
+</RelativeLayout>

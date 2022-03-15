@@ -29,6 +29,11 @@ class CreateAccountFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity as LoginActivity).setUpTitle(R.string.informacoes)
+    }
+
     fun createAccount() {
         with(binding){
             viewmodel.createAccount(edtNomecriar.text.toString(), edtUsuariocriar.text.toString(), edtDatanasccriar.text.toString(), edtEmailcriar.text.toString(), edtSenhacriar.text.toString())

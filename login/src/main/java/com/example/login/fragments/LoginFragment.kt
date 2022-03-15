@@ -36,6 +36,11 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity as LoginActivity).setUpTitle(R.string.bemvindo)
+    }
+
     private fun checkLogin() {
         with(binding){
             if(viewmodel.getAccount(edtUserlogin.text.toString(), edtSenhalogin.text.toString())){

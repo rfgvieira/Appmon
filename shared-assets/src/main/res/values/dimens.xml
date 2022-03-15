@@ -12,9 +12,10 @@
     <dimen name="txt_small">12sp</dimen>
     <dimen name="txt_xnormal">16sp</dimen>
     <dimen name="txt_normal">18sp</dimen>
+    <dimen name="txt_large">22sp</dimen>
 
 
-
+    <dimen name="redondo">120dp</dimen>
     <dimen name="bolah">160dp</dimen>
     <dimen name="bolaw">10dp</dimen>
     <dimen name="bolarad">320dp</dimen>

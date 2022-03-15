@@ -52,7 +52,6 @@ dependencies {
     implementation project(':login')
     implementation project(':base')
     implementation project(':pokemon')
-    implementation project(':habilidades')
     implementation project(':service')
     implementation project(':models')
 }

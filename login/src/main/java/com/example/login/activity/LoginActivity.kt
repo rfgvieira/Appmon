@@ -26,7 +26,6 @@ class LoginActivity : BaseActivity() {
             .replace(R.id.fl_login,loginFragment,"Login")
              .addToBackStack(null)
              .commit()
-         binding.tvTitlelogin.text = getString(R.string.bemvindo)
     }
 
      fun setUpCreateFragment() {
@@ -35,7 +34,6 @@ class LoginActivity : BaseActivity() {
             .replace(R.id.fl_login,createFragment,"Create")
             .addToBackStack(null)
             .commit()
-         binding.tvTitlelogin.text = getString(R.string.informacoes)
     }
 
     fun setUpEsqueciFragment(){
@@ -44,6 +42,10 @@ class LoginActivity : BaseActivity() {
             .replace(R.id.fl_login,esqueciFragment,"Esqueci")
             .addToBackStack(null)
             .commit()
-        binding.tvTitlelogin.text = getString(R.string.esqsenha)
     }
+
+    fun setUpTitle(resId : Int){
+        binding.tvTitlelogin.text = getString(resId)
+    }
+
 }

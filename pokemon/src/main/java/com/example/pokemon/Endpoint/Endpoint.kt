@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface Endpoint {
-    @GET("pokemon/?")
-    fun getPokemon(@Query("limit") quant : Int) : Response<PokemonModel.Response>
+    @GET("pokemon?")
+    suspend fun getPokemon(@Query("limit") quant : Int) : Response<PokemonModel.Response>
 }
