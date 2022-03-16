@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_table_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightdarkgray"
+    android:weightSum="1"
+    android:paddingVertical="@dimen/margintiny">
+    <TextView
+        android:id="@+id/tv_qtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:textSize="@dimen/txt_xnormal"
+        tools:text="2"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:textSize="@dimen/txt_xnormal"
+        android:text="@string/item"
+        tools:text="Ability"/>
+    <TextView
+        android:id="@+id/tv_detalheslink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_xnormal"
+        android:textColor="@color/red"
+        android:text="@string/detalhes"/>
+</LinearLayout>

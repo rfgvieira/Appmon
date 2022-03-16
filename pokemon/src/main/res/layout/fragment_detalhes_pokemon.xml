@@ -5,4 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include android:id="@+id/icl_titledetalhepokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/redarrowitemleft"/>
+
+    <include layout="@layout/card_detalhes_pokemon"
+        android:id="@+id/icl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icl_titledetalhepokemon"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

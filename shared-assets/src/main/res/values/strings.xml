@@ -27,6 +27,7 @@
     <string name="qtd">Qtd.</string>
     <string name="item">Item</string>
     <string name="go">Go</string>
+    <string name="detalhes">DETALHES</string>
     <string name="detalhepoke">Detalhes do Pokémon</string>
 
 </resources>

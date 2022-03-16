@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginsmall"
+    android:paddingTop="@dimen/margintiny"
+    android:background="@color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imv_redarrowdetalhe"
+        android:layout_width="@dimen/imgsmall"
+        android:layout_height="@dimen/imgsmall"
+        android:src="@drawable/arrowred"
+        android:layout_alignEnd="@id/cl_texto"
+        android:translationZ="100dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedelement">
+
+        <TextView
+            android:id="@+id/tv_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_large"
+            android:paddingVertical="@dimen/margintiny"
+            android:layout_marginStart="@dimen/marginsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/detalhepoke" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

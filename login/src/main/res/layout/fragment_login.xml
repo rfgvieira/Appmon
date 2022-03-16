@@ -68,48 +68,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_criarconta"/>
 
-
-    <ImageView
-        android:layout_width="@dimen/imgsmall"
-        android:layout_height="@dimen/imgsmall"
-        android:src="@drawable/pokeball"
-        app:layout_constraintEnd_toStartOf="@id/btn_criarconta"
-        app:layout_constraintTop_toTopOf="@id/btn_criarconta" />
-
-    <Button
+    <include
         android:id="@+id/btn_criarconta"
+        layout="@layout/create_account_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/criar"
-        android:padding="@dimen/xnormal"
-        android:layout_marginHorizontal="@dimen/marginnormal"
-        android:layout_marginBottom="@dimen/marginlarge"
-        android:background="@drawable/roundedelement"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:layout_marginBottom="@dimen/marginnormal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_powered"/>
-
-    <ImageView
-        android:layout_width="@dimen/imgsmall"
-        android:layout_height="@dimen/imgsmall"
-        android:src="@drawable/pokeball"
-        app:layout_constraintStart_toEndOf="@id/btn_criarconta"
-        app:layout_constraintTop_toTopOf="@id/btn_criarconta" />
-
-
-<!--    <include-->
-<!--        android:id="@id/btn_criarconta"-->
-<!--        layout="@layout/create_account_button"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/tv_powered"/>-->
+        app:layout_constraintBottom_toTopOf="@id/tv_powered"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"/>
 
     <TextView
         android:id="@+id/tv_powered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/powered"
-        android:layout_marginBottom="@dimen/normal"
         android:elevation="@dimen/large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

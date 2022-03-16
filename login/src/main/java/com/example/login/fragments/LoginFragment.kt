@@ -21,7 +21,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentLoginBinding.inflate(inflater,container,false)
 
-        binding.btnCriarconta.setOnClickListener {
+        binding.btnCriarconta.clMainbutton.setOnClickListener {
             (activity as LoginActivity).setUpCreateFragment()
         }
 

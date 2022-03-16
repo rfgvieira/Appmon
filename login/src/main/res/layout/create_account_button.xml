@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/imgsmall"
-    android:background="@color/white"
+    android:background="@color/transparent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:layout_width="@dimen/imgsmall"

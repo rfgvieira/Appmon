@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/roundedelement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margintiny"
+    android:paddingBottom="@dimen/marginnormal">
+
+        <TextView
+            android:id="@+id/tv_pokename"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:background="@color/darkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_large"
+            tools:text = "Squirtle"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/imv_detalhes"
+            android:layout_width="@dimen/imgxxbig"
+            android:layout_height="@dimen/imgxxbig"
+            tools:src="@drawable/ash"
+            android:layout_marginVertical="@dimen/marginsmall"
+            app:layout_constraintTop_toBottomOf="@id/tv_pokename"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_tabeladetalhestitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_title_table"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imv_detalhes">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingStart="@dimen/margintiny"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_xnormal"
+                android:text="@string/qtd"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_xnormal"
+                android:text="@string/item"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_xnormal"
+                android:text="@string/go"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_tabeladetalhestitle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

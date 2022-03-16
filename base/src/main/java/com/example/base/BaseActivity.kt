@@ -25,6 +25,13 @@ abstract class BaseActivity : AppCompatActivity() {
         binding.imvBolabranca.visibility = View.GONE
     }
 
+    fun showRedBall(){
+        binding.imvBolavermelha.visibility = View.VISIBLE
+    }
+
+    fun showWhiteBall(){
+        binding.imvBolabranca.visibility = View.VISIBLE
+    }
 
     override fun onBackPressed() {
         val count = supportFragmentManager.backStackEntryCount
