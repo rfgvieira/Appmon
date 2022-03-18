@@ -1,8 +1,8 @@
 package com.example.pokemon.repository
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.models.AbilityModel
 import com.example.models.PokemonDetalhesModel
 import com.example.models.PokemonModel
 import com.example.pokemon.Endpoint.Endpoint
@@ -25,6 +25,9 @@ class PokemonRepo {
 
     private var _pokemonId = MutableLiveData<Int>()
     val pokemonId : LiveData<Int> = _pokemonId
+
+    private var _pokemonAbilities = MutableLiveData<AbilityModel.Reponse>()
+    val pokemonAbilities : LiveData<AbilityModel.Reponse> = _pokemonAbilities
 
     private var _errorApi= MutableLiveData<Boolean>()
     val errorApi : LiveData<Boolean> = _errorApi
@@ -57,10 +60,22 @@ class PokemonRepo {
         }
     }
 
+    fun getAbility(id : Int){
+        CoroutineScope(Dispatchers.IO).launch {
+            val response = endpoint.getAbility(id)
+            if(response.isSuccessful){
+                val model = response.body()
+                if(model != null)
+                    _pokemonAbilities.postValue(model)
+                else
+                    _errorApi.postValue(true)
+            } else
+                _errorApi.postValue(true)
+        }
+    }
+
     fun putPokemonValues(id : Int, name : String){
         _pokemonName.postValue(name)
         _pokemonId.postValue(id)
     }
-
-
 }

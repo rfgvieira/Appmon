@@ -3,6 +3,7 @@ package com.example.base
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import com.example.base.databinding.ActivityBaseBinding
 
 abstract class BaseActivity : AppCompatActivity() {
@@ -31,6 +32,14 @@ abstract class BaseActivity : AppCompatActivity() {
 
     fun showWhiteBall(){
         binding.imvBolabranca.visibility = View.VISIBLE
+    }
+
+    fun redBackground(){
+        binding.root.setBackgroundColor(ContextCompat.getColor(this,R.color.red))
+    }
+
+    fun normalBackground(){
+        binding.root.setBackgroundColor(ContextCompat.getColor(this,R.color.gray))
     }
 
     override fun onBackPressed() {

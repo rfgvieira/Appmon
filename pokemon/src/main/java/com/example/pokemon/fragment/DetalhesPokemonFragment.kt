@@ -22,7 +22,12 @@ class DetalhesPokemonFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        (activity as PokemonActivity).normalBackground()
+        (activity as PokemonActivity).removePokeball()
+        (activity as PokemonActivity).removeText()
         (activity as PokemonActivity).hideRedBall()
+
         binding = FragmentDetalhesPokemonBinding.inflate(inflater, container, false)
         initObserver()
 

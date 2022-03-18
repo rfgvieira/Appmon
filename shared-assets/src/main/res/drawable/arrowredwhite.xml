@@ -8,7 +8,7 @@
                 android:width="@dimen/redondo"
                 android:height="@dimen/redondo"/>
             <stroke
-                android:color="@color/black"
+                android:color="@color/white"
                 android:width="@dimen/small"/>
             <corners
 

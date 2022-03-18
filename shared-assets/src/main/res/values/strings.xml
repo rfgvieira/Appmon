@@ -17,17 +17,26 @@
     <string name="errologin"><b>Usuário ou/e senha incorreto(s)</b></string>
     <string name="esqsenhadesc">Digite seu e-mail para enviarmos \n um link de recuperação de senha</string>
 
-    <!--Pokemon-->
+    <!--Pokemon Lista-->
     <string name="indisponivel">Pokemóns Indisponíveis</string>
     <string name="naoencontra">Não encontramos nada\nno momento. Volte depois.</string>
     <string name="disponivel">Pokemóns Disponíveis</string>
     <string name="escolha"><b>ESCOLHA SEU POKEMÓN</b></string>
     <string name="cliquepokemon">Clique em um dos pokemóns\nDa lista abaixo para ver\nos detalhes de cada um.</string>
     <string name="quantidade">Quantidade: </string>
+
+    <!--Pokemon Detalhes-->
     <string name="qtd">Qtd.</string>
     <string name="item">Item</string>
     <string name="go">Go</string>
     <string name="detalhes">DETALHES</string>
     <string name="detalhepoke">Detalhes do Pokémon</string>
+
+    <!--Pokemon Habilidades-->
+    <string name="ability">Ability</string>
+    <string name="idioma">ALTERAR IDIOMA</string>
+    <string name="escidioma">Escolha um idioma</string>
+    <string name="ingles">Inglês</string>
+    <string name="alemao">Alemão</string>
 
 </resources>

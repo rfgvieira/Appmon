@@ -15,9 +15,16 @@
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/create_account_button.xml" value="0.5" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/fragment_detalhes_pokemon.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/fragment_disponivel.xml" value="0.33" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/fragment_habilidade.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/fragment_indisponivel.xml" value="0.33" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/item_ability.xml" value="0.25" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/item_pokemon.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/item_tabela_pokemon.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/popup_idioma.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/redarrowitemleft.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/pokemon/src/main/res/layout/redarrowredback.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/arrowred.xml" value="0.3962962962962963" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/arrowredwhite.xml" value="0.3861111111111111" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/background_item_pokemon.xml" value="0.3962962962962963" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/bolabranca.xml" value="0.3962962962962963" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/bolavermelha.xml" value="0.37777777777777777" />
@@ -27,6 +34,7 @@
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedbackgroundfocus.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedelement.xml" value="0.37222222222222223" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedelementred.xml" value="0.37222222222222223" />
+        <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedelementredwhite.xml" value="0.3861111111111111" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/Appmon/shared-assets/src/main/res/drawable/roundedspecial.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/base/src/main/res/layout/activity_base.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/login/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
@@ -35,25 +43,6 @@
         <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/bolabranca.xml" value="0.3888888888888889" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/bolavermelha.xml" value="0.3888888888888889" />
         <entry key="..\:/Users/sallo/Documents/Trabalho/shared-assets/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3830769230769231" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/base/src/main/res/layout/activity_base.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/login/src/main/res/layout/activity_login.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/login/src/main/res/layout/create_account_button.xml" value="0.13949275362318841" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/login/src/main/res/layout/fragment_create_account.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/login/src/main/res/layout/fragment_esqueci.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/login/src/main/res/layout/fragment_login.xml" value="0.16799999999999998" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/activity_pokemon.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/card_detalhes_pokemon.xml" value="0.176" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/create_account_button.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/fragment_detalhes_pokemon.xml" value="0.152" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/fragment_disponivel.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/item_pokemon.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/item_tabela_pokemon.xml" value="0.264" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/redarrowitem.xml" value="0.176" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/redarrowitemleft.xml" value="0.1" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/pokemon/src/main/res/layout/redarrowright.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/shared-assets/src/main/res/drawable/background_title_table.xml" value="0.1" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/shared-assets/src/main/res/drawable/bolabranca.xml" value="0.1" />
-        <entry key="..\:/Users/vr0016/AndroidStudioProjects/Appmon/shared-assets/src/main/res/drawable/roundedelement.xml" value="0.1" />
       </map>
     </option>
   </component>

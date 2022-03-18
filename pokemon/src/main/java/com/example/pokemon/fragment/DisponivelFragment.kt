@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.models.PokemonModel
 import com.example.pokemon.R
+import com.example.pokemon.activity.PokemonActivity
 import com.example.pokemon.adapter.PokemonAdapter
 import com.example.pokemon.databinding.FragmentDisponivelBinding
 import com.example.pokemon.databinding.FragmentIndisponivelBinding
@@ -20,11 +21,17 @@ class DisponivelFragment : Fragment() {
     private lateinit var binding : FragmentDisponivelBinding
     private val viewModel : PokemonViewModel by viewModel()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        (activity as PokemonActivity).showPokeball()
+        (activity as PokemonActivity).showText()
+        (activity as PokemonActivity).showRedBall()
+
         binding = FragmentDisponivelBinding.inflate(inflater, container, false)
         viewModel.getPokemons()
         initObserver()
         return binding.root
     }
+
 
     private fun initObserver() {
         viewModel.pokemon.observe(viewLifecycleOwner){

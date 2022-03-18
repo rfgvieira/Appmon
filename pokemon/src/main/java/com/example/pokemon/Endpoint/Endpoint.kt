@@ -1,5 +1,6 @@
 package com.example.pokemon.Endpoint
 
+import com.example.models.AbilityModel
 import com.example.models.PokemonDetalhesModel
 import com.example.models.PokemonModel
 import retrofit2.Response
@@ -13,4 +14,7 @@ interface Endpoint {
 
     @GET("pokemon/{id}")
     suspend fun getPokemonId(@Path("id") id : Int) : Response<PokemonDetalhesModel.Response>
+
+    @GET("ability/{id}")
+    suspend fun getAbility(@Path("id") id : Int) : Response<AbilityModel.Reponse>
 }

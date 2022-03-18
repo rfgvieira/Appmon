@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margintiny"
+        android:textSize="@dimen/txt_large"
+        android:textStyle="bold"
+        android:text="@string/escidioma"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/margintiny"
+        android:paddingHorizontal="@dimen/marginnormal"
+        android:layout_marginVertical="@dimen/margintiny"
+        android:background="@drawable/roundedelement"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_large"
+        android:text="@string/ingles"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/margintiny"
+        android:paddingHorizontal="@dimen/marginnormal"
+        android:layout_marginBottom="@dimen/marginsmall"
+        android:background="@drawable/roundedelement"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_large"
+        android:text="@string/alemao"/>
+
+
+</LinearLayout>

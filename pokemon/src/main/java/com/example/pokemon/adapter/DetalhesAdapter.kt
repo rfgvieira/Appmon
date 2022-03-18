@@ -1,10 +1,8 @@
 package com.example.pokemon.adapter
 
 import android.content.Context
-import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.models.PokemonDetalhesModel
@@ -32,7 +30,7 @@ class DetalhesAdapter(private val pokeInfo: PokemonDetalhesModel.Response,
 
         binding.tvQtd.text = getType(item).toString()
         binding.tvName.text = item
-        binding.tvName.setOnClickListener {
+        binding.tvDetalheslink.setOnClickListener {
             clickDetalhes(position)
         }
     }

@@ -3,6 +3,7 @@ package com.example.pokemon.activity
 import android.os.Bundle
 import android.view.View
 import com.example.base.BaseActivity
+import com.example.models.PokemonDetalhesModel
 import com.example.pokemon.R
 import com.example.pokemon.databinding.ActivityPokemonBinding
 import com.example.pokemon.fragment.DetalhesPokemonFragment
@@ -25,8 +26,6 @@ class PokemonActivity : BaseActivity() {
     }
 
     fun setUpDisponivelFragment(){
-        showPokeball()
-        showText()
         binding.tvTitlepokemon.text = getString(R.string.disponivel)
         val dispFragment = DisponivelFragment()
         supportFragmentManager.beginTransaction()
@@ -36,8 +35,6 @@ class PokemonActivity : BaseActivity() {
     }
 
     fun setUpIndisponivelFragment(){
-        showPokeball()
-        showText()
         binding.tvTitlepokemon.text = getString(R.string.indisponivel)
         val indispFragment = IndisponivelFragment()
         supportFragmentManager.beginTransaction()
@@ -47,8 +44,6 @@ class PokemonActivity : BaseActivity() {
     }
 
     fun setUpDetalhesFragment(id : Int, name : String){
-        removePokeball()
-        removeText()
         viewModel.putPokemonValues(id,name)
         val detalheFragment = DetalhesPokemonFragment()
         supportFragmentManager.beginTransaction()
@@ -57,9 +52,7 @@ class PokemonActivity : BaseActivity() {
             .commit()
     }
 
-    fun setUpHabilidadesFragment(){
-        removePokeball()
-        removeText()
+    fun setUpHabilidadesFragment() {
         val habilidadesFragment = HabilidadeFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_pokemon,habilidadesFragment,"Habilidades")
