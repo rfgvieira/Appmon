@@ -21,6 +21,7 @@
         android:textSize="@dimen/txt_normal"
         android:text="@string/naoencontra"
         android:layout_marginTop="@dimen/margintiny"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toBottomOf="@id/imv_ashind"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

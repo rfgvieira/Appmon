@@ -45,7 +45,7 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onBackPressed() {
         val count = supportFragmentManager.backStackEntryCount
 
-        if(count == 0)
+        if(count <= 1)
             super.onBackPressed()
         else
             supportFragmentManager.popBackStack()

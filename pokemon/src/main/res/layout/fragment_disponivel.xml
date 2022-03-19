@@ -22,6 +22,7 @@
         android:textSize="@dimen/txt_normal"
         android:text="@string/escolha"
         android:layout_marginTop="@dimen/margintiny"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toTopOf="@id/imv_ashdisp"
         app:layout_constraintStart_toEndOf="@id/imv_ashdisp"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -33,6 +34,7 @@
         android:textSize="@dimen/txt_xnormal"
         android:text="@string/cliquepokemon"
         android:layout_marginTop="@dimen/margintiny"
+        android:fontFamily="@font/cour"
         app:layout_constraintTop_toBottomOf="@id/tv_escolha"
         app:layout_constraintStart_toEndOf="@id/imv_ashdisp"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -42,6 +44,8 @@
         tools:text="Quantidade : 20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/courier_bold"
+        android:textSize="@dimen/txt_small"
         app:layout_constraintBottom_toTopOf="@id/rv_pokemons"
         app:layout_constraintEnd_toEndOf="parent"/>
 

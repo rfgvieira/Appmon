@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.1"
         android:textSize="@dimen/txt_xnormal"
-        tools:text="2"/>
+        tools:text="2"
+        android:fontFamily="@font/cour"/>
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -21,7 +22,8 @@
         android:layout_weight="0.7"
         android:textSize="@dimen/txt_xnormal"
         android:text="@string/item"
-        tools:text="Ability"/>
+        tools:text="Ability"
+        android:fontFamily="@font/cour"/>
     <TextView
         android:id="@+id/tv_detalheslink"
         android:layout_width="wrap_content"
@@ -30,5 +32,6 @@
         android:textStyle="bold"
         android:textSize="@dimen/txt_xnormal"
         android:textColor="@color/red"
-        android:text="@string/detalhes"/>
+        android:text="@string/detalhes"
+        android:fontFamily="@font/courier_bold"/>
 </LinearLayout>

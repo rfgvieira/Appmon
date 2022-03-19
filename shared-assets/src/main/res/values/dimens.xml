@@ -27,6 +27,7 @@
     <dimen name="imgxbig">200dp</dimen>
     <dimen name="imgbig">300dp</dimen>
 
+    <dimen name="marginxtiny">5dp</dimen>
     <dimen name="margintiny">10dp</dimen>
     <dimen name="marginsmall">20dp</dimen>
     <dimen name="marginxnormal">30dp</dimen>

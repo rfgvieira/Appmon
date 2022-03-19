@@ -23,6 +23,7 @@
         tools:text="@string/bemvindo"
         android:textSize="@dimen/txt_normal"
         android:layout_marginTop="@dimen/marginnormal"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toBottomOf="@id/imv_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

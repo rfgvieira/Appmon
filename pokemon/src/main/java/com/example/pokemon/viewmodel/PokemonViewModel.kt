@@ -1,6 +1,7 @@
 package com.example.pokemon.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import com.example.models.AbilityModel
 import com.example.models.PokemonDetalhesModel
@@ -18,19 +19,28 @@ class PokemonViewModel(private val repository : PokemonRepo) : ViewModel() {
 
 
 
+    private val pokemonListObserver = Observer<PokemonModel.Response> {
+        pokemon.postValue(it)
+    }
+
+    private val pokemonDetalhesObserver = Observer<PokemonDetalhesModel.Response> {
+        detalhe.postValue(it)
+    }
+
+    private val abilityObserver = Observer<AbilityModel.Reponse> {
+        ability.postValue(it)
+    }
+
+
     fun getPokemons() {
         repository.getPokemons()
-        repository.pokemonList.observeForever {
-            pokemon.postValue(it)
-        }
+        repository.pokemonList.observeForever(pokemonListObserver)
     }
 
     fun getPokemonId(){
         repository.pokemonId.value?.let { repository.getPokemonId(it) }
 
-        repository.detalheList.observeForever {
-            detalhe.postValue(it)
-        }
+        repository.detalheList.observeForever(pokemonDetalhesObserver)
     }
 
     fun putPokemonValues(id : Int, name : String){
@@ -44,6 +54,7 @@ class PokemonViewModel(private val repository : PokemonRepo) : ViewModel() {
     fun setAbilityList(ability: AbilityModel.Reponse) {
         repository.detalheList.value?.let {
             _abilityList.add(ability)
+
             if(_abilityList.size == it.abilities.size){
                 abilityList.postValue(_abilityList)
             }
@@ -51,10 +62,7 @@ class PokemonViewModel(private val repository : PokemonRepo) : ViewModel() {
     }
 
     fun getAbility() {
-
-        repository.pokemonAbilities.observeForever {
-            ability.postValue(it)
-        }
+        repository.pokemonAbilities.observeForever(abilityObserver)
 
         repository.detalheList.value?.let {
             val abilityList : List<PokemonDetalhesModel.Ability> = it.abilities
@@ -67,9 +75,10 @@ class PokemonViewModel(private val repository : PokemonRepo) : ViewModel() {
         }
     }
 
-//    fun getAbilityList() : List<PokemonDetalhesModel.Ability>{
-//        return repository.pokemonAbilities.value ?: emptyList()
-//    }
-
-
+    override fun onCleared() {
+        super.onCleared()
+        repository.pokemonList.removeObserver(pokemonListObserver)
+        repository.detalheList.removeObserver(pokemonDetalhesObserver)
+        repository.pokemonAbilities.removeObserver(abilityObserver)
+    }
 }

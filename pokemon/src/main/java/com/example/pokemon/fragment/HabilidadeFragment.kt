@@ -10,7 +10,9 @@ import com.example.models.AbilityModel
 import com.example.pokemon.activity.PokemonActivity
 import com.example.pokemon.adapter.AbilityAdapter
 import com.example.pokemon.databinding.FragmentHabilidadeBinding
+import com.example.pokemon.databinding.PopupIdiomaBinding
 import com.example.pokemon.viewmodel.PokemonViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -32,10 +34,36 @@ class HabilidadeFragment : Fragment() {
         initObserver()
 
         binding = FragmentHabilidadeBinding.inflate(inflater, container, false)
+
         binding.iclAbilityFragTitle.imvBackarrow.setOnClickListener {
             (activity as PokemonActivity).onBackPressed()
         }
+
+        binding.btnIdioma.setOnClickListener {
+            popUp()
+        }
         return binding.root
+    }
+
+    private fun popUp() {
+        val popUp = PopupIdiomaBinding.inflate(layoutInflater)
+        activity?.let {
+            val dialog = BottomSheetDialog(it)
+            dialog.setCancelable(true)
+            dialog.setContentView(popUp.root)
+
+            popUp.btnEnglish.setOnClickListener {
+                setUpAdapter(viewModel.abilityList.value,0)
+                dialog.dismiss()
+            }
+
+            popUp.btnAlemao.setOnClickListener {
+                setUpAdapter(viewModel.abilityList.value,1)
+                dialog.dismiss()
+            }
+
+            dialog.show()
+        }
     }
 
     private fun initObserver() {
@@ -44,16 +72,16 @@ class HabilidadeFragment : Fragment() {
         }
 
         viewModel.abilityList.observe(viewLifecycleOwner){
-            setUpAdapter(it)
+            setUpAdapter(it,0)
         }
     }
 
-    private fun setUpAdapter(list: ArrayList<AbilityModel.Reponse>?) {
+    private fun setUpAdapter(list: ArrayList<AbilityModel.Reponse>?, language : Int) {
         binding.rvAbilitylist.adapter = null
 
         if (list != null) {
             activity?.let {
-                binding.rvAbilitylist.adapter = AbilityAdapter(it,list)
+                binding.rvAbilitylist.adapter = AbilityAdapter(it,list,language)
             }
         }
 

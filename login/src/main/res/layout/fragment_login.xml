@@ -13,8 +13,9 @@
         android:layout_marginHorizontal="@dimen/normal"
         android:hint="@string/usuario"
         android:background="@drawable/roundedelement"
-        android:padding="@dimen/xnormal"
+        android:padding="@dimen/margintiny"
         android:gravity="center"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -25,9 +26,10 @@
         android:layout_marginHorizontal="@dimen/normal"
         android:hint="@string/senha"
         android:background="@drawable/roundedelement"
-        android:padding="@dimen/xnormal"
+        android:padding="@dimen/margintiny"
         android:gravity="center"
         android:layout_marginTop="@dimen/small"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toBottomOf="@id/edt_userlogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -37,7 +39,10 @@
         android:layout_height="wrap_content"
         android:text="@string/esqsenha"
         android:textSize="@dimen/txt_small"
+        android:textStyle="bold"
         android:textColor="@color/red"
+        android:layout_marginTop="@dimen/margintiny"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintTop_toBottomOf="@id/edt_senhalogin"
         app:layout_constraintEnd_toEndOf="@id/edt_senhalogin"/>
 
@@ -59,11 +64,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/entrar"
-        android:padding="@dimen/xnormal"
+        android:padding="@dimen/margintiny"
         android:textColor="@color/white"
         android:layout_marginHorizontal="@dimen/normal"
         android:layout_marginBottom="@dimen/normal"
+        android:textSize="@dimen/txt_normal"
         android:background="@drawable/roundedelementred"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_criarconta"/>
@@ -87,6 +94,7 @@
         android:layout_height="wrap_content"
         android:text="@string/powered"
         android:elevation="@dimen/large"
+        android:fontFamily="@font/courier_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

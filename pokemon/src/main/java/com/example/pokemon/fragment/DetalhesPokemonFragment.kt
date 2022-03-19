@@ -31,7 +31,7 @@ class DetalhesPokemonFragment : Fragment() {
         binding = FragmentDetalhesPokemonBinding.inflate(inflater, container, false)
         initObserver()
 
-        binding.iclCard.tvPokename.text = viewModel.getPokemonName()
+        binding.iclCard.tvPokemonname.text = viewModel.getPokemonName()
         binding.iclTitledetalhepokemon.imvBackarrow.setOnClickListener {
             (activity as PokemonActivity).showRedBall()
             (activity as PokemonActivity).showText()

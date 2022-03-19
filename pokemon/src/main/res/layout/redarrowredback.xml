@@ -24,10 +24,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingVertical="@dimen/margintiny"
+            android:paddingVertical="@dimen/marginxtiny"
             android:textSize="@dimen/txt_large"
             android:text="@string/ability"
             android:textColor="@color/white"
+            android:fontFamily="@font/cour"
             android:layout_marginStart="@dimen/marginlarge"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -30,7 +30,6 @@ class PokemonActivity : BaseActivity() {
         val dispFragment = DisponivelFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_pokemon,dispFragment,"Disponivel")
-            .addToBackStack(null)
             .commit()
     }
 

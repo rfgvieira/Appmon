@@ -11,9 +11,11 @@
         android:layout_marginVertical="@dimen/margintiny"
         android:textSize="@dimen/txt_large"
         android:textStyle="bold"
-        android:text="@string/escidioma"/>
+        android:text="@string/escidioma"
+        android:fontFamily="@font/courier_bold"/>
 
     <Button
+        android:id="@+id/btn_english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="@dimen/margintiny"
@@ -22,9 +24,11 @@
         android:background="@drawable/roundedelement"
         android:textStyle="bold"
         android:textSize="@dimen/txt_large"
-        android:text="@string/ingles"/>
+        android:text="@string/ingles"
+        android:fontFamily="@font/courier_bold"/>
 
     <Button
+        android:id="@+id/btn_alemao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="@dimen/margintiny"
@@ -33,7 +37,8 @@
         android:background="@drawable/roundedelement"
         android:textStyle="bold"
         android:textSize="@dimen/txt_large"
-        android:text="@string/alemao"/>
+        android:text="@string/alemao"
+        android:fontFamily="@font/courier_bold"/>
 
 
 </LinearLayout>
