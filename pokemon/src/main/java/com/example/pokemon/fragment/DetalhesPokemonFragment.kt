@@ -8,10 +8,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.models.PokemonDetalhesModel
+import com.example.pokemon.R
 import com.example.pokemon.activity.PokemonActivity
 import com.example.pokemon.adapter.DetalhesAdapter
 import com.example.pokemon.databinding.FragmentDetalhesPokemonBinding
 import com.example.pokemon.viewmodel.PokemonViewModel
+import com.squareup.picasso.Picasso
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -56,6 +58,12 @@ class DetalhesPokemonFragment : Fragment() {
 
         binding.iclCard.rvDetalhes.adapter = adapter
         binding.iclCard.rvDetalhes.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+
+        list.sprites.other?.let {
+            val urlImage = it.officialArtwork.frontDefault
+            Picasso.get().load(urlImage).error(R.drawable.pokeball).into(binding.iclCard.imvDetalhes)
+        }
+
 
     }
 }
