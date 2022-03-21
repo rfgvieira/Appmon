@@ -14,6 +14,10 @@ class EsqueciFragment : Fragment() {
     private lateinit var binding : FragmentEsqueciBinding
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentEsqueciBinding.inflate(layoutInflater, container, false)
+        binding.iclButtonForget.tvButton.text = getString(R.string.enviar)
+        binding.iclButtonForget.clButton.setOnClickListener {
+            (activity as LoginActivity).setUpLoginFragment()
+        }
         return binding.root
     }
 

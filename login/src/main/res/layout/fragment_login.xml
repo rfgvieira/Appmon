@@ -59,21 +59,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
-        android:id="@+id/btn_entrarlogin"
+    <include
+        android:id="@+id/icl_button_login"
+        layout="@layout/buttonstandart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar"
         android:padding="@dimen/margintiny"
-        android:textColor="@color/white"
         android:layout_marginHorizontal="@dimen/normal"
-        android:layout_marginBottom="@dimen/normal"
-        android:textSize="@dimen/txt_normal"
-        android:background="@drawable/roundedelementred"
-        android:fontFamily="@font/courier_bold"
+        android:layout_marginBottom="@dimen/marginsmall"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_criarconta"/>
+        app:layout_constraintBottom_toTopOf="@id/btn_criarconta" />
 
     <include
         android:id="@+id/btn_criarconta"

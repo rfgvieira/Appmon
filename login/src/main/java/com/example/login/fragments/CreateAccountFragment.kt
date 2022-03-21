@@ -19,9 +19,8 @@ class CreateAccountFragment : Fragment() {
     private val viewmodel : LoginViewModel by viewModel()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentCreateAccountBinding.inflate(inflater, container, false)
-
-        binding.btnEntrarcriar.setOnClickListener {
-
+        binding.iclButtonCreate.tvButton.text = getString(R.string.criar)
+        binding.iclButtonCreate.clButton.setOnClickListener {
             createAccount()
             (activity as LoginActivity).setUpLoginFragment()
         }

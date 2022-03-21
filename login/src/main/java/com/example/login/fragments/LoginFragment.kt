@@ -29,7 +29,8 @@ class LoginFragment : Fragment() {
             (activity as LoginActivity).setUpEsqueciFragment()
         }
 
-        binding.btnEntrarlogin.setOnClickListener {
+        binding.iclButtonLogin.tvButton.text = getString(R.string.entrar)
+        binding.iclButtonLogin.clButton.setOnClickListener {
             checkLogin()
         }
 

@@ -33,21 +33,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_descesqueci" />
 
-    <Button
-        android:id="@+id/btn_enviaresqueci"
+    <include
+        android:id="@+id/icl_button_forget"
+        layout="@layout/buttonstandart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar"
         android:padding="@dimen/margintiny"
-        android:textColor="@color/white"
         android:layout_marginHorizontal="@dimen/normal"
         android:layout_marginBottom="@dimen/marginnormal"
-        android:textSize="@dimen/txt_normal"
-        android:background="@drawable/roundedelementred"
-        android:fontFamily="@font/courier_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_emailesqueci"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
