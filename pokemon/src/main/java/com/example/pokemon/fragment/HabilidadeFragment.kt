@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.models.AbilityModel
+import com.example.pokemon.R
 import com.example.pokemon.activity.PokemonActivity
 import com.example.pokemon.adapter.AbilityAdapter
 import com.example.pokemon.databinding.FragmentHabilidadeBinding
@@ -39,7 +40,9 @@ class HabilidadeFragment : Fragment() {
             (activity as PokemonActivity).onBackPressed()
         }
 
-        binding.btnIdioma.setOnClickListener {
+        binding.iclButtonIdioma.tvButton.text = getString(R.string.idioma)
+
+        binding.iclButtonIdioma.clButtonredwhite.setOnClickListener {
             popUp()
         }
         return binding.root

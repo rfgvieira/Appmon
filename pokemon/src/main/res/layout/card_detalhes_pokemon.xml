@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/roundedelement"
+    android:background="@drawable/background_pokemon_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="@dimen/margintiny"
+
     android:paddingBottom="@dimen/marginnormal">
 
     <TextView
         android:id="@+id/tv_pokemonname"
-        android:layout_marginHorizontal="10dp"
+
         android:gravity="center"
         android:background="@drawable/background_pokemon_title"
         android:layout_width="match_parent"
@@ -38,31 +38,32 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_title_table"
             android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/margintiny"
             android:layout_marginTop="@dimen/margintiny"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imv_detalhes">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:paddingStart="@dimen/margintiny"
+                android:layout_weight="0.15"
+                android:paddingStart="@dimen/marginxtiny"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_xnormal"
                 android:text="@string/qtd"
                 android:fontFamily="@font/cour"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
+                android:layout_weight="0.6"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_xnormal"
                 android:text="@string/item"
                 android:fontFamily="@font/cour"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
+                android:layout_weight="0.25"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_xnormal"
                 android:text="@string/go"
@@ -71,6 +72,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_detalhes"
+            android:layout_marginHorizontal="@dimen/margintiny"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/ll_tabeladetalhestitle"

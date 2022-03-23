@@ -9,26 +9,27 @@
     android:paddingVertical="@dimen/margintiny">
     <TextView
         android:id="@+id/tv_qtd"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_weight="0.15"
         android:textSize="@dimen/txt_xnormal"
+        android:paddingStart="@dimen/marginxtiny"
         tools:text="2"
         android:fontFamily="@font/cour"/>
     <TextView
         android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.7"
+        android:layout_weight="0.6"
         android:textSize="@dimen/txt_xnormal"
         android:text="@string/item"
         tools:text="Ability"
         android:fontFamily="@font/cour"/>
     <TextView
         android:id="@+id/tv_detalheslink"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
+        android:layout_weight="0.25"
         android:textStyle="bold"
         android:textSize="@dimen/txt_xnormal"
         android:textColor="@color/red"

@@ -22,21 +22,16 @@
         android:layout_height="0dp"
         android:layout_marginVertical="@dimen/marginnormal"
         app:layout_constraintTop_toBottomOf="@id/icl_ability_frag_title"
-        app:layout_constraintBottom_toBottomOf="@id/btn_idioma"/>
+        app:layout_constraintBottom_toTopOf="@+id/icl_button_idioma"/>
 
-    
-    <Button
-        android:id="@+id/btn_idioma"
+    <include
+        android:id="@+id/icl_button_idioma"
+        layout="@layout/redwhitebuttom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="@dimen/marginsmall"
-        android:paddingVertical="@dimen/margintiny"
-        android:background="@drawable/roundedelementredwhite"
-        android:textColor="@color/white"
-        android:textSize="@dimen/txt_xnormal"
-        android:text="@string/idioma"
-        android:fontFamily="@font/courier_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

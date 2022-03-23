@@ -7,7 +7,7 @@
     android:paddingBottom="@dimen/marginlarge"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/roundedelement">
+    android:background="@drawable/background_pokemon_card">
 
     <TextView
         android:id="@+id/title_ability"
